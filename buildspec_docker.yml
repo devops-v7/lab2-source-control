@@ -38,6 +38,7 @@ phases:
       - echo Signing the latest image pushed to ECR
       - export IMAGE_SHA_ARN=$IMAGE_REPO_URI@$IMAGE_SHA
       - echo IMAGE_SHA_ARN is $IMAGE_SHA_ARN
-      - echo "SIGNER_PROFILE_ARN is $SIGNER_PROFILE_ARN" # Add this line
+      - echo "SIGNER_PROFILE_ARN is $SIGNER_PROFILE_ARN" # current
+      - echo Raw SIGNER_PROFILE_ARN: ${SIGNER_PROFILE_ARN}
       - notation sign $IMAGE_SHA_ARN --plugin com.amazonaws.signer.notation.plugin --id $SIGNER_PROFILE_ARN
       - notation inspect $IMAGE_SHA_ARN
