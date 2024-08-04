@@ -75,7 +75,7 @@ export class PipelineCdkStack extends Stack {
     //Create a new parameter called signer-profile-arn
     const signerARNParameter = new ssm.StringParameter(this, 'SignerARNParam', {
       parameterName: 'signer-profile-arn',
-      stringValue: 'arn:aws:signer:us-east-1:697830474638:/signing-profiles/ecr_signing_profile',
+      stringValue: 'arn:aws:ssm:us-east-1:697830474638:parameter/signer-profile-arn',
     });
 
     //Add an IAM Policy Statement to the CodeBuild project
