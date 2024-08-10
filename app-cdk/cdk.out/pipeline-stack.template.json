@@ -1006,7 +1006,7 @@
    "Properties": {
     "Name": "signer-profile-arn",
     "Type": "String",
-    "Value": "arn:aws:signer:us-east-1:697830474638:/signing-profiles/ecr_signing_profile/XT0anBZZmh"
+    "Value": "arn:aws:signer:us-east-1:697830474638:/signing-profiles/ecr_signing_profile"
    },
    "Metadata": {
     "aws:cdk:path": "pipeline-stack/SignerARNParam/Resource"
