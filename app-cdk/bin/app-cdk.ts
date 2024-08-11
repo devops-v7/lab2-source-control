@@ -17,3 +17,6 @@ const pipelineCdkStack = new PipelineCdkStack(app, 'pipeline-stack', {
   });
   
 
+const pipelineCdkStack = new PipelineCdkStack(app, 'pipeline-stack', {
+  ecrRepository: ecrCdkStack.repository,
+});
